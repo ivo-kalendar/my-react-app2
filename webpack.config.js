@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
 	mode: "development",
-	entry: {path: path.resolve(__dirname, "src", "app")},
+	entry: path.resolve(__dirname, "src", "app"),
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: "bundle.js",
@@ -10,5 +10,11 @@ module.exports = {
 	},
 	resolve: {extensions: ['.js', '.jsx']},
 	devServer: {historyApiFallback: true},
-	module: {rules: [{ test: /\.jsx?/, loader: 'babel-loader' }]}
+	module: {rules: [
+		{ test: /\.jsx?/, loader: 'babel-loader' },
+		{ 
+			test: /\.s?[ac]ss$/i, 
+			use: ['style-loader', 'css-loader', 'sass-loader'] 
+		}
+	]}
 }
