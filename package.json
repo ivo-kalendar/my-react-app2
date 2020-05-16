@@ -2,11 +2,12 @@
   "name": "my-react-app2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "start": "node ./src/server/server"
   },
   "keywords": [],
   "author": "Ivo Kalendarov <ivokalendar@icloud.com>",

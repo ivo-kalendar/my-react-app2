@@ -1,7 +1,7 @@
 import React from 'react'
 import { store } from '../store'
 
-console.log(store.getState())
+// console.log(store.getState())
 
 export const Main = () => (
 	<div id="main">

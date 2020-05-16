@@ -1,4 +1,4 @@
-import './styles/index.css'
+import './styles/index.sass'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Container } from './components/Container.jsx'
