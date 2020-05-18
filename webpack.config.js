@@ -9,7 +9,11 @@ module.exports = {
 		publicPath: '/'
 	},
 	resolve: {extensions: ['.js', '.jsx']},
-	devServer: {host: '192.168.0.100',historyApiFallback: true},
+	devServer: { 
+		host: '192.168.0.100', 
+		port: '7788',
+		historyApiFallback: true 
+	},
 	module: {rules: [
 		{ test: /\.jsx?/, loader: 'babel-loader' },
 		{ 
